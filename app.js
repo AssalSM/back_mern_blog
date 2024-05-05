@@ -15,7 +15,7 @@ const app = express()
 
 //
 app.use(cors({
-    origin:"http://localhost:3000"
+    origin:["http://localhost:3000","https://mern-blog-api-7p7s.onrender.com"]
 }))
 
 // middlewares 
@@ -34,7 +34,7 @@ app.use("/api/category" , require("./routes/CategoryRoute"));
 app.use(notfound)
 app.use(errorhandler)
 // Running the server
-const PORT = process.env.PORT || 8000 ;
+const PORT = process.env.PORT || 4000 ;
 app.listen( PORT, () => {
     console.log(` server is running is ${process.env.NODE_ENV} MODE OM PORT ${PORT} `)
 });
