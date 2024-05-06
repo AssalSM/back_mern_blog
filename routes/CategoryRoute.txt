@@ -2,7 +2,7 @@ const {
   createCategoryCtrl,
   createAllCategoryCtrl,
   deleteCategoryCtrl,
-} = require("../controllers/categorycontrollers");
+} = require("../controllers/Categorycontrollers");
 const { verifyTokenAndAdmin } = require("../middlewares/verifyToken");
 const router = require("express").Router();
 const validateObjectid = require("../middlewares/validateObjectid");
