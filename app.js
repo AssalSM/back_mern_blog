@@ -10,12 +10,13 @@ const cors = require("cors")
 // connect to db
 connectToDb()
 
+
 // init app
 const app = express()
 
 //
 app.use(cors({
-    origin:["http://localhost:3000","https://mern-blog-api-7p7s.onrender.com"]
+    origin:["http://localhost:3000","https://back-mern-blog.onrender.com"]
 }))
 
 // middlewares 
