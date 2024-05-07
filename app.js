@@ -16,7 +16,7 @@ const app = express()
 
 //
 app.use(cors({
-    origin:["http://localhost:3000","https://back-mern-blog.onrender.com"]
+    origin:["http://localhost:3000","https://mern-blog-9jhi.onrender.com"]
 }))
 
 // middlewares 
